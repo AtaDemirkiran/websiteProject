@@ -1,0 +1,30 @@
+html,body,header{
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.top-nav-collapse{
+    background-color: indigo;
+}
+.view{
+    background: url("../img/mainPic.jpg") no-repeat center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*scroll-behavior: smooth;*/
+    background-size: cover;
+    width: 100%;
+    height: 775px;
+    
+}
+.navbar.nav-item{
+
+}
+.slogan{
+    padding-top: 300px;
+    padding-left: 250px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#menu{
+    font-size:22px;
+    
+}

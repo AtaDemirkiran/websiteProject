@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="products.html">Ürünler</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                    <li><a href="https://www.hepsiburada.com/magaza/saatexpress?kategori=2147483632">hepsiburada</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    
+    <section class="home">
+    </section>
+    <br><br>
+    <div>
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">SAAT EXPRESS</h2>
+        
+			
+			<p class="myP"></p>
+				<p class="myP">
+                    En kaliteli ve sizi yansıtacak en özel marka saatlerimiz ile hizmetinizdeyiz. Saatlerimizi web sayfamızdan ve 
+                    <a class="text-white" style="font-weight: bold; background-color: #FF6000;" href="https://www.hepsiburada.com/magaza/saatexpress?kategori=2147483632">hepsiburada</a>'dan inceleyebilirsiniz.
+                    <br>
+                    <p class="myP" id="slogan">"Zaman beklemez,takip için en iyisi biziz."</p>
+				
+			</p>
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>  
+    <script>
+            $('.navTrigger').click(function () {
+                     $(this).toggleClass('active');
+                    console.log("Clicked menu");
+                     $("#mainListDiv").toggleClass("show_list");
+                    $("#mainListDiv").fadeIn();
+
+          });
+
+    </script>
+    <br>
+    
+    <!--some products başlangı-->
+
+
+        <div class="container" id="someProduct">
+            <h1 class="text-center font-weight-bold" style="word-spacing:5px;">ÜRÜNLER</h1>
+            <hr class="bg-dark" style="border: 3px solid black;">
+
+            <div class="row">
+            
+                <!--product 1-->
+            <div class="col-md-4 product-grid">
+                <div class="image" id="productImage">
+                    <a href="productOne.html"><img src="img/Ar1452_1.jpg" class="w-100" alt="">
+                    <div class="overlay">
+                        <div class="detail">Detay Göster</div>
+                    </div>
+                    </a>
+                </div>
+                <h3 class="text-center font-weight-bold">Emporio Armani</h3>
+                <h4 class="text-center">Ar1452 Erkek Kol Saati</h4>
+                <h4 class="text-center"> <strong>Fiyat:899,000 ₺</strong> </h4>
+                <a href="https://www.hepsiburada.com/emporio-armani-ar1452-erkek-kol-saati-p-SASVRNARM150116903?magaza=SaatExpress" role="button" class="btn buy" id="buyIt">Satın Al</a>
+
+            </div>
+            
+            <!--product 2-->
+            
+            <div class="col-md-4 product-grid">
+                <div class="image" id="productImage">
+                        <a href="AR1648.html"><img src="img/Ar1648_1.jpg" class="w-100" alt="">
+                            <div class="overlay">
+                                <div class="detail">Detay Göster</div>
+                            </div>
+                        </a>
+                </div>
+                        <h3 class="text-center font-weight-bold">Emporio Armani</h3>
+                        <h4 class="text-center">Ar1648 Erkek Kol Saati</h4>
+                        <h4 class="text-center"> <strong>Fiyat: 929,00 ₺</strong> </h4>
+                        <a href="https://www.hepsiburada.com/emporio-armani-ar1648-erkek-kol-saati-p-HBV00000C1EVN?magaza=SaatExpress" role="button" class="btn buy" id="buyIt">Satın Al</a>
+        
+            </div>
+              <!--product 3-->
+            
+              <div class="col-md-4 product-grid">
+                <div class="image" id="productImage">
+                        <a href="Mk5896.html"><img src="img/Mk5896_1.jpg" class="w-100" alt="">
+                            <div class="overlay">
+                                <div class="detail">Detay Göster</div>
+                            </div>
+                        </a>
+                </div>
+                        <h3 class="text-center font-weight-bold">Michael Korsi</h3>
+                        <h4 class="text-center">Mk5896 Kadın Kol Saati</h4>
+                        <h4 class="text-center"> <strong>Fiyat:  859,00 ₺</strong> </h4>
+                        <a href="https://www.hepsiburada.com/michael-kors-mk5896-kadin-kol-saati-p-SAGSAMK5896?magaza=SaatExpress" role="button" class="btn buy" id="buyIt">Satın Al</a>
+        
+            </div>
+        
+        
+            <div class="col-md-12 text-center">
+                <div class="button">
+                   <a href="products.html"><button class="btn w-25 font-weight-bold" id="showMore"><span>Daha Fazla</span></button></a> 
+                </div>
+            </div>
+            
+
+            </div>
+
+        </div>
+
+        <!--
+        <script>
+            $(function(){
+                $("#showMore").click(function(){
+                    window.location("products.html");
+                });
+            })
+        </script> -->
+
+
+
+    <!--some products sonu-->
+
+
+
+
+
+<!-- footer başlangıc-->
+    <footer class="page-footer bg-dark" id="altFooter">
+        <div class="bg-dark">
+            <div class="row py-4 d-flex align-items-center">
+
+                <div class="col-md-12 text-center">
+                    <a href="https://www.instagram.com/expresssaat/"><i class="fab fa-instagram text-white mr-5"></i></a>
+                    <i class="fab fa-facebook-f text-white mr-5"></i>
+                    <i class="fab fa-twitter text-white mr-5"></i>
+                    <i class="fas fa-envelope text-white "></i>
+                
+                </div>
+            </div>
+        </div>
+        <hr class="bg-light">
+
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Hakkımızda</h6>
+                    <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;">
+                    <p class="mt-2">En kaliteli ve sizi yansıtacak en özel marka saatlerimiz ile hizmetinizdeyiz. Saatlerimizi web sayfamızdan ve hepsiburada'dan inceleyebilirsiniz. </p>
+                </div>
+               
+                <div class="col-md-3 mx-auto mb-4">
+
+                    <h6 class="text-uppercase font-weight-bold">Ürünler</h6>
+                    <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width:85px; height: 2px;">
+                    
+                    <ul class="list-unstyled">
+                        <li class="my-2">Emporio Armani</li>
+                        <li class="my-2">Diesel</li>
+                        <li class="my-2">Ray-Ban</li>
+                        <li class="my-2">Michael Kors</li>
+                    </ul>
+
+                </div>
+                
+                <div class="col-md-2 mx-auto mb-4">
+                    
+                    <h6 class="text-uppercase font-weight-bold">Menu</h6>
+                    <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width:110px; height: 2px;">
+
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="products.html">Ürünler</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li><a href="https://www.hepsiburada.com/magaza/saatexpress?kategori=2147483632">hepsiburada</a></li>
+                    </ul>
+                
+                </div>  
+                <div class="col-md-3 mx-auto mb-4">
+                    
+                    <h6 class="text-uppercase font-weight-bold">İletişim</h6>
+                    <hr class="bg-light mb-4 mt-0 d-inline-block mx-auto" style="width:75px; height: 2px;">
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home "> İstanbul/Turkiye</i></li>
+                        <li class="my-2"><i class="fas fa-shopping-cart"> hepsiburada/SaatExpress</i></li>
+                        <li class="my-2"><i class="fas fa-phone"> +905000000000</i></li>
+                        <li class="my-2"><i class="fab fa-instagram"> expresssaat</i></li>
+                    </ul>
+
+                
+                
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-copyright text-center py-3">
+            <p>&copy; Copyright 
+                <a href="index.html">saatexpress.com</a>
+            </p>
+            <p>Designed By saatexpress</p>
+        </div>
+
+
+    </footer>
+<!--footer sonu-->
+
+
+
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+</html>
